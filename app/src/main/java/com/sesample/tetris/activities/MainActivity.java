@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.sesample.tetris.R;
 
@@ -72,8 +73,18 @@ public class MainActivity extends Activity implements OnClickListener{
 				runOnUiThread(new Runnable() {
 					@Override
 					public void run() {
+						String toastMessage = null;
+						if (score == 1 && mScore == 0) {
+							toastMessage = "Achievement: 1 point!";
+						} else if (score == 5 && mScore == 4) {
+							toastMessage = "Achievement: 5 points!";
+						}
+						if (toastMessage != null) {
+							Toast.makeText(MainActivity.this, toastMessage, Toast.LENGTH_SHORT).show();
+						}
 						mScore = score;
 						mScoreView.setText(Integer.toString(mScore));
+
 					}
 				});
 			}

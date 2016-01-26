@@ -30,10 +30,22 @@ public class SplashActivity extends Activity {
              */
             @Override
             public void run() {
+                // Check if there is incoming deep link and redirect to the deep link activity
+                if (false) {
+                    redirectToDeepLink("");
+                }
+
                 Intent i = new Intent(SplashActivity.this, MenuActivity.class);
                 startActivity(i);
                 finish();
             }
         }, SPLASH_TIME_OUT);
+    }
+
+    private void redirectToDeepLink(String message) {
+        Intent i = new Intent(SplashActivity.this, DeepLinkActivity.class);
+        i.putExtra(DeepLinkActivity.EXTRA_DEEPLINK_MESSAGE, message);
+        startActivity(i);
+        finish();
     }
 }

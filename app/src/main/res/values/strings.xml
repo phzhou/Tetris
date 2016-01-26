@@ -26,4 +26,8 @@
     <string name="thank_you">Thank you for playing!</string>
     <string name="high">High Score:</string>
     <string name="back">BACK</string>
+
+    <!-- Deep Link -->
+    <string name="deep_link">Deep Link</string>
+    <string name="deep_link_message">This activity is only available through redirects from a deep link. Here is the deep link content:</string>
 </resources>

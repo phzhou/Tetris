@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Tetris</string>
+
+    <string name="left">LEFT</string>
+    <string name="right">RIGHT</string>
+    <string name="down">DOWN</string>
+    <string name="turn">TURN</string>
+
+    <string name="level">Level:</string>
+    <string name="score">Score:</string>
+
+    <string name="splash">A Tribute to Tetris</string>
+
+    <!-- Menu -->
+    <string name="menu_title">Options</string>
+    <string name="level_label">Select Level:</string>
+    <string-array name="level_array">
+        <item>EASY</item>
+        <item>NORMAL</item>
+        <item>HARD</item>
+        <item>DEBUG</item>
+    </string-array>
+    <string name="start">Start</string>
+
+    <!-- Result -->
+    <string name="thank_you">Thank you for playing!</string>
+    <string name="high">High Score:</string>
+    <string name="back">BACK</string>
+</resources>

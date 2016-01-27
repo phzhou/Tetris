@@ -22,6 +22,9 @@ public class MainActivity extends Activity implements OnClickListener{
 
 	public static final int GAME_OVER_TIME_OUT = 2000;
 
+	public static final String ACHIEVEMENT_1_POINTS = "ACHIEVEMENT_1_POINTS";
+	public static final String ACHIEVEMENT_5_POINTS = "ACHIEVEMENT_5_POINTS";
+
 	private GameSurfaceView mGameSurfaceView;
 	private Button mLeft;
 	private Button mRight;

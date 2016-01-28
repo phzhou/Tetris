@@ -1,7 +1,7 @@
 # Tetris
 
 A sample Android game of Tetris.
-The aim for this project is to provide a tutorial process to Facebook SDK integration with gaming apps.
+The aim for this project is to provide a template gaming app that you can practice integrating Facebook SDK. For any Facebook developer resources or technical documents, you should use the [Facebook Developers Site](https://developers.facebook.com/apps/).
 
 The main project structure:
 - activities: Implementation of the various activities (views) in the game
@@ -12,6 +12,17 @@ The Facebook integration tutorial process:
 - Facebook SDK Install
 - Facebook App Events Implementation
 - Deep Link Integration
+
+# Tasks
+
+To practice the integration, you should do the following:
+
+- Install the Facebook SDK into your app
+- Track activate app in order to track install
+- Track achievements using App Events
+- Verify your App Events
+- Integrate deep links
+- Verify deep links
 
 # Facebook SDK install
 
@@ -49,5 +60,5 @@ The user will be redirected to the `DeepLinkActivity` and the screen will show t
 ## Verifying Deep Links
 
 You can verify your deep link integration in two ways:
-- From [App Ads Helper](https://developers.facebook.com/tools/app-ads-helper/), scroll down and click on `Test Deep Link` and send a deep link like `sesampletetris://deeplink/12345`. You will receive a notification containing this deep link in your Facebook app.
+- From [App Ads Helper](https://developers.facebook.com/tools/app-ads-helper/), select the app you created then scroll down and click on `Test Deep Link` and send a deep link like `sesampletetris://deeplink/12345`. You will receive a notification containing this deep link in your Facebook app.
 - You can browse to `http://sesampleweb.herokuapp.com/deep_link.html` and there is a link as mentioned above. When you click on that link, the app should open and you will be redirected to the `DeepLinkActivity`.

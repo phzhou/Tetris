@@ -13,6 +13,12 @@ The Facebook integration tutorial process:
 - Facebook App Events Implementation
 - Deep Link Integration
 
+Requirements:
+- Android Studio
+- A virtual device or Android device for testing
+
+You should be able to open this project in Android Studio and build it and run in the virtual device or Android device of your choice.
+
 # Tasks
 
 To practice the integration, you should do the following:
